@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Harshita Ramesh | Software Engineer</title>
+
+  <meta
+    name="description"
+    content="Harshita Ramesh — Software Engineer with 3+ years of hands-on development experience across enterprise software, full-stack applications, cloud systems and applied AI."
+  />
+
+  <style>
+    :root {
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --surface-muted: #f1f3f5;
+      --text: #17191c;
+      --text-secondary: #5e646b;
+      --text-light: #858b92;
+      --border: #e1e4e8;
+      --accent: #1f4f7a;
+      --max-width: 1120px;
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* ==================== NAVIGATION ==================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 248, 250, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(225, 228, 232, 0.8);
+    }
+
+    nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 750;
+      letter-spacing: -0.4px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    /* ==================== HERO ==================== */
+
+    .hero {
+      padding: 65px 0 80px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+      gap: 70px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(54px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -4.5px;
+      max-width: 850px;
+      margin-bottom: 25px;
+      font-weight: 780;
+    }
+
+    .hero-description {
+      max-width: 720px;
+      font-size: 19px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 650;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      border-color: #c4c9ce;
+    }
+
+    .button-primary {
+      background: var(--text);
+      color: white;
+      border-color: var(--text);
+    }
+
+    .hero-meta {
+      border-left: 1px solid var(--border);
+      padding-left: 30px;
+    }
+
+    .meta-item {
+      margin-bottom: 21px;
+    }
+
+    .meta-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .meta-value {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* ==================== SECTIONS ==================== */
+
+    section {
+      padding: 85px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: 0.55fr 1.45fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 34px;
+      letter-spacing: -1.5px;
+      margin-bottom: 12px;
+    }
+
+    .section-description {
+      color: var(--text-secondary);
+      max-width: 700px;
+      font-size: 16px;
+    }
+
+    /* ==================== IMPACT ==================== */
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+    }
+
+    .impact-card {
+      padding: 28px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .impact-number {
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 750;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .impact-text {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    /* ==================== PROJECTS ==================== */
+
+    .projects {
+      display: grid;
+      gap: 20px;
+    }
+
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-2px);
+      border-color: #c6cbd0;
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+
+    .project-title {
+      font-size: 22px;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+
+    .project-type {
+      color: var(--text-light);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .project-link {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .project-description {
+      color: var(--text-secondary);
+      max-width: 900px;
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    .project-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 24px;
+    }
+
+    .project-detail h4 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .project-detail p {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 22px;
+    }
+
+    .tag {
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      padding: 5px 9px;
+      border-radius: 5px;
+      font-size: 12px;
+      color: #444a50;
+    }
+
+    /* ==================== GITHUB CTA ==================== */
+
+    .github-card {
+      margin-top: 24px;
+      background: var(--text);
+      color: white;
+      border-radius: var(--radius);
+      padding: 30px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .github-card h3 {
+      font-size: 21px;
+      margin-bottom: 6px;
+      letter-spacing: -0.4px;
+    }
+
+    .github-card p {
+      color: #b8bec5;
+      font-size: 14px;
+    }
+
+    .github-button {
+      background: white;
+      color: var(--text);
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* ==================== EXPERIENCE ==================== */
+
+    .experience-list {
+      display: grid;
+      gap: 0;
+    }
+
+    .experience {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 50px;
+      padding: 38px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .experience:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .experience-date {
+      color: var(--text-light);
+      font-size: 13px;
+    }
+
+    .experience-role {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .experience-company {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .experience-list-items {
+      list-style: none;
+      display: grid;
+      gap: 11px;
+    }
+
+    .experience-list-items li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .experience-list-items li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ==================== SKILLS ==================== */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+    }
+
+    .skill-group {
+      background: var(--surface);
+      padding: 28px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-group h3 {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .skill-group p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* ==================== EDUCATION ==================== */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .education-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: var(--radius);
+    }
+
+    .education-degree {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .education-school {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .education-details {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    /* ==================== ABOUT ==================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .about-text {
+      color: var(--text-secondary);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .about-facts {
+      display: grid;
+      gap: 18px;
+    }
+
+    .fact {
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .fact-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .fact-value {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* ==================== CONTACT ==================== */
+
+    .contact {
+      padding: 100px 0;
+      background: #17191c;
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 80px;
+      align-items: end;
+    }
+
+    .contact h2 {
+      font-size: clamp(40px, 6vw, 64px);
+      letter-spacing: -3px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: #b8bec5;
+      font-size: 17px;
+      max-width: 650px;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-link {
+      border-bottom: 1px solid #34383d;
+      padding-bottom: 12px;
+      color: #e5e7e9;
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: white;
+    }
+
+    /* ==================== FOOTER ==================== */
+
+    footer {
+      background: #17191c;
+      border-top: 1px solid #30343a;
+      color: #858b92;
+      padding: 25px 0;
+      font-size: 12px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* ==================== RESPONSIVE ==================== */
+
+    @media (max-width: 950px) {
+      .impact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 50px 0 65px;
+      }
+
+      .hero-grid,
+      .section-header,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .hero-meta {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-left: 0;
+        padding-top: 25px;
+      }
+
+      .experience {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .project-details,
+      .skills-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .github-card {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      h1 {
+        font-size: 48px;
+        letter-spacing: -2.8px;
+      }
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .impact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project {
+        padding: 23px;
+      }
+
+      .project-top {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      footer .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="container">
+      <nav>
+
+        <a href="#top" class="logo">
+          Harshita Ramesh
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="top">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-grid">
+
+          <div>
+
+            <div class="eyebrow">
+              Software Engineer · Ireland
+            </div>
+
+            <h1>
+              Harshita Ramesh
+            </h1>
+
+            <p class="hero-description">
+              Software Engineer with 3+ years of hands-on development
+              experience across enterprise software, full-stack applications,
+              cloud systems and applied AI.
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                class="button button-primary"
+                href="#projects"
+              >
+                View selected work
+              </a>
+
+              <a
+                class="button"
+                href="#contact"
+              >
+                Get in touch
+              </a>
+
+              <a
+                class="button"
+                href="https://www.linkedin.com/in/harshita01r"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <aside class="hero-meta">
+
+            <div class="meta-item">
+              <div class="meta-label">
+                Hands-on development
+              </div>
+
+              <div class="meta-value">
+                3+ years
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">
+                Professional industry
+              </div>
+
+              <div class="meta-value">
+                2.5+ years
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">
+                Core stack
+              </div>
+
+              <div class="meta-value">
+                C# · .NET · React · SQL
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">
+                Cloud
+              </div>
+
+              <div class="meta-value">
+                Azure · AWS
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">
+                Availability
+              </div>
+
+              <div class="meta-value">
+                Immediately available
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- IMPACT -->
+
+    <section id="impact">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Engineering outcomes
+            </h2>
+
+            <p class="section-description">
+              Selected results from enterprise software development,
+              modernisation, performance optimisation and production support.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="impact-grid">
+
+          <div class="impact-card">
+            <div class="impact-number">40%</div>
+            <div class="impact-text">
+              Reduction in audit preparation time through enterprise
+              application modernisation and automation.
+            </div>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-number">50%</div>
+            <div class="impact-text">
+              Reduction in average page load time through full-stack
+              performance improvements.
+            </div>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-number">99.9%</div>
+            <div class="impact-text">
+              Data accuracy across systems handling more than 10,000 daily
+              transactions.
+            </div>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-number">&lt;8s</div>
+            <div class="impact-text">
+              Report generation time reduced from approximately 45 seconds
+              through SQL optimisation and indexing.
+            </div>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-number">30%</div>
+            <div class="impact-text">
+              Reduction in mean time to resolution across critical enterprise
+              systems.
+            </div>
+          </div>
+
+          <!-- <div class="impact-card">
+            <div class="impact-number">95%+</div>
+            <div class="impact-text">
+              Exercise repetition detection accuracy achieved in the MEng
+              computer vision project at approximately 30 FPS.
+            </div>
+          </div> -->
+
+          <div class="impact-card">
+            <div class="impact-number">10K+</div>
+            <div class="impact-text">
+              Daily transactions supported across enterprise systems and
+              downstream regulatory reporting workflows.
+            </div>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-number">5+</div>
+            <div class="impact-text">
+              Enterprise modernisation projects delivered using ASP.NET Core,
+              C#, SQL Server and cloud-ready technologies.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Selected projects
+            </h2>
+
+            <p class="section-description">
+              A selection of systems spanning full-stack engineering,
+              cloud infrastructure, real-time communication and applied AI.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="projects">
+
+
+          <!-- VIBEMAP -->
+
+          <article class="project">
+
+            <div class="project-top">
+
+              <div>
+
+                <div class="project-type">
+                  Full-stack · Cloud
+                </div>
+
+                <h3 class="project-title">
+                  VibeMap — Real-Time Anonymous Platform
+                </h3>
+
+              </div>
+
+              <a
+                class="project-link"
+                href="https://vibemap.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live application ↗
+              </a>
+
+            </div>
+
+
+            <p class="project-description">
+              A real-time, responsive location-based web application enabling
+              users to discover and share anonymous location-based posts with
+              live updates.
+            </p>
+
+
+            <div class="project-details">
+
+              <div class="project-detail">
+
+                <h4>
+                  Architecture
+                </h4>
+
+                <p>
+                  Next.js and TypeScript frontend with Supabase/PostgreSQL,
+                  containerised with Docker and deployed on AWS ECS Fargate
+                  behind an Application Load Balancer.
+                </p>
+
+              </div>
+
+
+              <div class="project-detail">
+
+                <h4>
+                  Engineering work
+                </h4>
+
+                <p>
+                  Implemented GitHub Actions CI/CD, Amazon ECR, Route 53,
+                  CloudWatch monitoring and Grafana k6 load testing to assess
+                  infrastructure and application performance.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="tags">
+
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">AWS ECS Fargate</span>
+              <span class="tag">ECR</span>
+              <span class="tag">ALB</span>
+              <span class="tag">Route 53</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">GitHub Actions</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- WEBCHAT -->
+
+          <article class="project">
+
+            <div class="project-top">
+
+              <div>
+
+                <div class="project-type">
+                  Full-stack · Real-time
+                </div>
+
+                <h3 class="project-title">
+                  AI-Moderated Real-Time Chat Application
+                </h3>
+
+              </div>
+
+
+              <a
+                class="project-link"
+                href="https://github.com/harshita168y/webchat"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+
+            <p class="project-description">
+              A scalable, event-driven full-stack platform combining
+              real-time communication, REST APIs, role-based access control
+              and AI-assisted content moderation.
+            </p>
+
+
+            <div class="project-details">
+
+              <div class="project-detail">
+
+                <h4>
+                  Architecture
+                </h4>
+
+                <p>
+                  ASP.NET Core backend with React and TypeScript frontend,
+                  SignalR WebSockets for real-time messaging and PostgreSQL
+                  for persistent data.
+                </p>
+
+              </div>
+
+
+              <div class="project-detail">
+
+                <h4>
+                  Engineering work
+                </h4>
+
+                <p>
+                  Implemented audit logging, role-based access control,
+                  Gemini API moderation and automated deployment to Azure
+                  App Service through CI/CD.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="tags">
+
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">SignalR</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Azure</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Gemini API</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- EXERCISE MONITORING -->
+
+          <article class="project">
+
+            <div class="project-top">
+
+              <div>
+
+                <div class="project-type">
+                  Computer vision · MEng thesis
+                </div>
+
+                <h3 class="project-title">
+                  Exercise Monitoring & Pose Estimation
+                </h3>
+
+              </div>
+
+
+              <a
+                class="project-link"
+                href="https://github.com/harshita168y/Exercise-Monitoring-and-Pose-Estimation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+
+            <p class="project-description">
+              A real-time Android computer vision application for exercise
+              monitoring and repetition detection, developed as the capstone
+              project and thesis for the MEng in Computer Vision and AI.
+            </p>
+
+
+            <div class="project-details">
+
+              <div class="project-detail">
+
+                <h4>
+                  Implementation
+                </h4>
+
+                <p>
+                  Kotlin, Python-based computer vision development and
+                  MediaPipe BlazePose with landmark geometry and heuristic
+                  state machines for exercise recognition.
+                </p>
+
+              </div>
+
+
+              <div class="project-detail">
+
+                <h4>
+                  Result
+                </h4>
+
+                <p>
+                  Achieved 95%+ accuracy in exercise repetition detection
+                  while operating at approximately 30 FPS.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="tags">
+
+              <span class="tag">Kotlin</span>
+              <span class="tag">Python</span>
+              <span class="tag">Android</span>
+              <span class="tag">MediaPipe BlazePose</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Pose Estimation</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- RESUME ANALYSER -->
+
+          <article class="project">
+
+            <div class="project-top">
+
+              <div>
+
+                <div class="project-type">
+                  AI · Developer tooling
+                </div>
+
+                <h3 class="project-title">
+                  Resume Analyser — AI Chrome Extension
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <p class="project-description">
+              An AI-powered Chrome extension designed to analyse resumes
+              against job descriptions and provide ranked skill-gap
+              recommendations.
+            </p>
+
+
+            <div class="project-details">
+
+              <div class="project-detail">
+
+                <h4>
+                  Integration
+                </h4>
+
+                <p>
+                  Integrates OpenAI, Anthropic Claude and Gemini APIs for
+                  resume and job-description analysis.
+                </p>
+
+              </div>
+
+
+              <div class="project-detail">
+
+                <h4>
+                  Privacy
+                </h4>
+
+                <p>
+                  Supports local LLM inference through Ollama, allowing
+                  analysis to run without sending data outside the user's
+                  local environment.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="tags">
+
+              <span class="tag">JavaScript</span>
+              <span class="tag">Chrome Extensions</span>
+              <span class="tag">OpenAI</span>
+              <span class="tag">Claude</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">Ollama</span>
+
+            </div>
+
+          </article>
+
+
+          <!-- EMAIL AUTOMATION -->
+
+          <article class="project">
+
+            <div class="project-top">
+
+              <div>
+
+                <div class="project-type">
+                  Automation · AI
+                </div>
+
+                <h3 class="project-title">
+                  AI Email Automation Workflow
+                </h3>
+
+              </div>
+
+
+              <a
+                class="project-link"
+                href="https://github.com/harshita168y/AI-Powered-Email-Automation-Workflow-"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+
+            <p class="project-description">
+              An intelligent Gmail automation workflow designed to draft,
+              review and approve email replies through a human-in-the-loop
+              process.
+            </p>
+
+
+            <div class="tags">
+
+              <span class="tag">n8n</span>
+              <span class="tag">Gmail API</span>
+              <span class="tag">OpenAI</span>
+              <span class="tag">OAuth 2.0</span>
+              <span class="tag">Automation</span>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+        <!-- GITHUB CTA -->
+
+        <div class="github-card">
+
+          <div>
+
+            <h3>
+              More technical work
+            </h3>
+
+            <p>
+              Explore additional projects, experiments and source code on my
+              GitHub profile.
+            </p>
+
+          </div>
+
+
+          <a
+            class="github-button"
+            href="https://github.com/harshita168y"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit GitHub ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Professional experience
+            </h2>
+
+            <p class="section-description">
+              Experience across enterprise software engineering,
+              modernisation, production support and client operations.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="experience-list">
+
+
+          <!-- COGNIZANT -->
+
+          <article class="experience">
+
+            <div class="experience-date">
+              Aug 2022 — Apr 2024
+            </div>
+
+
+            <div>
+
+              <h3 class="experience-role">
+                Software Engineer
+              </h3>
+
+              <div class="experience-company">
+                Cognizant Technology Solutions · India
+              </div>
+
+
+              <ul class="experience-list-items">
+
+                <li>
+                  Designed, coded and unit tested ASP.NET Core solutions using
+                  OOP principles, design patterns and REST APIs across 5+
+                  enterprise modernisation projects.
+                </li>
+
+                <li>
+                  Migrated legacy platforms to cloud-ready .NET Core solutions,
+                  eliminating manual compliance processes and reducing audit
+                  preparation time by 40%.
+                </li>
+
+                <li>
+                  Architected full-stack features that reduced average page
+                  load time by 50% and improved system throughput.
+                </li>
+
+                <li>
+                  Built and maintained .NET Core, C#, SQL Server and Entity
+                  Framework services supporting systems handling 10,000+
+                  daily transactions with 99.9% data accuracy.
+                </li>
+
+                <li>
+                  Optimised SQL queries and indexing strategies, reducing
+                  critical report generation time from 45 seconds to under
+                  8 seconds.
+                </li>
+
+                <li>
+                  Resolved 20+ high-severity production incidents using
+                  structured root cause analysis, contributing to a 30%
+                  reduction in mean time to resolution.
+                </li>
+
+                <li>
+                  Maintained CI/CD pipelines and participated in peer code
+                  reviews across development, staging and production
+                  environments.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- INTERN -->
+
+          <article class="experience">
+
+            <div class="experience-date">
+              Feb 2022 — Aug 2022
+            </div>
+
+
+            <div>
+
+              <h3 class="experience-role">
+                Software Engineer Intern
+              </h3>
+
+              <div class="experience-company">
+                Cognizant Technology Solutions · India
+              </div>
+
+
+              <ul class="experience-list-items">
+
+                <li>
+                  Developed modern frontend features using React.js, HTML,
+                  CSS and JavaScript, contributing to a 15% reduction in UI
+                  rendering issues based on QA regression results.
+                </li>
+
+                <li>
+                  Developed 10+ RESTful APIs using Java and Spring Boot,
+                  supporting CRUD operations across three internal
+                  applications.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- THREE -->
+
+          <article class="experience">
+
+            <div class="experience-date">
+              May 2026 — Jul 2026
+            </div>
+
+
+            <div>
+
+              <h3 class="experience-role">
+                B2B Client Operations Executive
+              </h3>
+
+              <div class="experience-company">
+                Three Ireland · Ireland
+              </div>
+
+
+              <ul class="experience-list-items">
+
+                <li>
+                  Managed B2B client operations for UK-based telecom providers
+                  using Salesforce CRM, developing transferable experience in
+                  stakeholder communication, CRM workflows and client
+                  relationship management.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- COVALEN -->
+
+          <article class="experience">
+
+            <div class="experience-date">
+              Oct 2025 — Apr 2026
+            </div>
+
+
+            <div>
+
+              <h3 class="experience-role">
+                Operations Specialist — Credit Support Unit
+              </h3>
+
+              <div class="experience-company">
+                Covalen (AIB) · Ireland
+              </div>
+
+
+              <ul class="experience-list-items">
+
+                <li>
+                  Supported AIB Credit Support Unit operations across lending
+                  products, developing familiarity with regulated financial
+                  services workflows and credit processes.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Technical expertise
+            </h2>
+
+            <p class="section-description">
+              A practical engineering stack spanning backend services,
+              frontend applications, relational databases, cloud infrastructure
+              and delivery automation.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+
+            <h3>
+              Backend
+            </h3>
+
+            <p>
+              C# · .NET Core · .NET 6+ · ASP.NET Core · Web API · RESTful API
+              Design · API Integration · Microservices Architecture · SignalR ·
+              WebSockets · Java · Spring Boot · Python
+            </p>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Frontend
+            </h3>
+
+            <p>
+              React · TypeScript · JavaScript · Next.js · HTML5 · CSS3 ·
+              Responsive Web Development · Component-Based Architecture ·
+              UI Development · REST API Integration
+            </p>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Database & Data
+            </h3>
+
+            <p>
+              SQL Server · PostgreSQL · Oracle SQL · Query Optimisation ·
+              Indexing · Stored Procedures · Views & Functions · SSIS ETL ·
+              Entity Framework · Data Migration · Data Validation
+            </p>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Cloud & DevOps
+            </h3>
+
+            <p>
+              Microsoft Azure · AWS · Docker · GitHub Actions · CI/CD · ECS
+              Fargate · ECR · Application Load Balancer · Route 53 ·
+              CloudWatch · S3 · IAM · Linux
+            </p>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              Engineering practices
+            </h3>
+
+            <p>
+              Agile / Scrum · Unit Testing · Integration Testing · Automated
+              Quality Assurance · Code Reviews · Performance Optimisation ·
+              Root Cause Analysis · Secure Development · Authentication ·
+              Role-Based Access Control · Swagger / OpenAPI
+            </p>
+
+          </div>
+
+
+          <div class="skill-group">
+
+            <h3>
+              AI & development
+            </h3>
+
+            <p>
+              AI-Assisted Development · Computer Vision · NLP · LLM
+              Applications · OpenAI APIs · Gemini API · Anthropic Claude ·
+              Ollama · MediaPipe · Python
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Education
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="education-grid">
+
+
+          <article class="education-card">
+
+            <h3 class="education-degree">
+              MEng in Computer Vision and Artificial Intelligence
+            </h3>
+
+            <div class="education-school">
+              University of Limerick · Ireland
+            </div>
+
+            <p class="education-details">
+
+              Sep 2024 — Sep 2025 · QCA 3.2/4.0
+
+              <br /><br />
+
+              Focused on Machine Learning, Computer Vision, Software
+              Engineering, Data Analytics, Information Systems, LLM Tuning,
+              Deep Learning and NLP.
+
+              <br /><br />
+
+              Worked extensively with <strong>Python</strong> throughout the
+              programme for machine learning, computer vision, data analysis
+              and AI development.
+
+            </p>
+
+          </article>
+
+
+          <article class="education-card">
+
+            <h3 class="education-degree">
+              BE in Electronics and Communication Engineering
+            </h3>
+
+            <div class="education-school">
+              St. Joseph's Institute of Technology · India
+            </div>
+
+            <p class="education-details">
+              Aug 2018 — May 2022 · CGPA 8.48 / First Class
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div></div>
+
+          <div>
+
+            <h2 class="section-title">
+              Engineering approach
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+          <div>
+
+            <p class="about-text">
+
+              I enjoy working across the boundaries between backend services,
+              frontend applications, databases and cloud infrastructure.
+              My professional experience has primarily involved enterprise
+              application development and modernisation, while my academic
+              work and personal projects have allowed me to explore real-time
+              systems, cloud architecture, computer vision and applied AI.
+
+              <br /><br />
+
+              I value clean code, maintainable architecture, automated testing,
+              measurable performance improvements and practical problem
+              solving. I am comfortable working across backend, frontend,
+              integrations and cloud environments and adapting to complex
+              business requirements.
+
+            </p>
+
+          </div>
+
+
+          <div class="about-facts">
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                Current direction
+              </div>
+
+              <div class="fact-value">
+                Full-Stack · Backend · Frontend · Cloud Software Engineering
+              </div>
+
+            </div>
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                Core strength
+              </div>
+
+              <div class="fact-value">
+                C# / .NET backend and full-stack development
+              </div>
+
+            </div>
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                Cloud experience
+              </div>
+
+              <div class="fact-value">
+                Microsoft Azure and AWS
+              </div>
+
+            </div>
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                AI / Computer Vision
+              </div>
+
+              <div class="fact-value">
+                Python · Computer Vision · NLP · LLM Applications
+              </div>
+
+            </div>
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                Work authorisation
+              </div>
+
+              <div class="fact-value">
+                Fully eligible to work in Ireland
+              </div>
+
+            </div>
+
+
+            <div class="fact">
+
+              <div class="fact-label">
+                Availability
+              </div>
+
+              <div class="fact-value">
+                Immediately available
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+
+          <div>
+
+            <div
+              class="eyebrow"
+              style="color: #9fbcd5;"
+            >
+              Contact
+            </div>
+
+            <h2>
+              Let's build something useful.
+            </h2>
+
+            <p>
+              I’m currently open to Software Engineer and Full-Stack Software
+              Engineer opportunities in Ireland.
+            </p>
+
+          </div>
+
+
+          <div class="contact-links">
+
+            <a
+              class="contact-link"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=harshita01r@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              harshita01r@gmail.com
+            </a>
+
+
+            <a
+              class="contact-link"
+              href="tel:+353899897463"
+            >
+              +353 89 989 7463
+            </a>
+
+
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/harshita01r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+
+            <a
+              class="contact-link"
+              href="https://github.com/harshita168y"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <span>
+        © 2026 Harshita Ramesh
+      </span>
+
+      <span>
+        Software Engineer · Ireland
+      </span>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
